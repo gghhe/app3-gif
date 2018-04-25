@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://s0.2mdn.net/4636993/1524215128856/300x250/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HardSell Abril SEAT León ST 2018- 300x250</title>
+  <link type="text/css" href="./style.css" rel="stylesheet" media="all">
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+<body>
+
+<div id="ad">
+<div onclick="clickthrough();" style="width: 300px;">
+
+<div class="baner" style="z-index:1;">
+  <div id="secuencia1" class="active">
+    <div class="maskGlob">
+        <div class="maskNew">
+            <div id="texto11" class="texto11 animado texto3"></div>
+        </div>
+        <div class="maskNew">
+            <div id="texto12" class="texto12 animado texto3"></div>
+        </div> 
+    </div>
+
+    <!--canvas id="canvas" width="300" height="250" style="background-color:#8e9da2">
+    </canvas-->
+    
+
+  </div>
+  <div id="secuencia2" class="">
+    <div id="fondoAm">
+    </div>
+     
+    <div id="content_scene2">
+    
+      <div class="imgcoche">
+      </div>
+      
+      <div class="masgGlob2">
+        <div class="mask2">
+            <div id="texto21" class="texto21 animado texto2"></div>
+        </div>
+        <div class="mask2">
+            <div id="texto22" class="texto22 animado texto2"></div>
+        </div> 
+         <div class="mask2">
+            <div id="texto23" class="texto23 animado texto2"></div>
+        </div>
+         <div class="mask2">
+            <div id="texto24" class="texto24 animado texto2"></div>
+        </div> 
+      </div>
+     
+      <div class="cta2" onclick="clickthrough();">
+          <div class="startmoving"></div>
+      </div>
+    </div>
+  </div>
+
+   <div id="secuencia3" class="">
+  
+    <div id="fondoAm">
+    </div>
+    <div id="content_scene3">
+      <div class="imgcoche"></div>
+      <div class="masgGlob2">
+        <div class="mask2">
+            <div id="texto31" class="texto31 animado texto2"></div>
+        </div>
+        <div class="mask2">
+            <div id="texto32" class="texto32 animado texto2"></div>
+        </div>
+      </div>
+      <div class="cta2" onclick="clickthrough();">
+          <div class="startmoving"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer_logo" class="footer_logo active">
+  </div>
+  <div id="footer_legal" class="footer_legal">
+  </div>
+
+
+  
+</div>
+
+</div>
+  </div>
+
+  <script>
+
+  var clickTag = "http://www.seat.mx/autos/leon-st/descubre.html";
+    if(typeof String.prototype.trim !== 'function') {
+      String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g, ''); 
+      }
+    }
+
+
+//var canvas = document.getElementById("canvas");
+//var ctx = canvas.getContext("2d");
+//var radius = canvas.height / 2;
+//ctx.translate(150, 70);
+//radius = radius * 0.40;
+//setInterval(drawClock, 10);
+
+if(typeof String.prototype.trim !== 'function') {
+  String.prototype.trim = function() {
+    return this.replace(/^\s+|\s+$/g, ''); 
+  }
+}
+
+function addClass(element,className) {
+  var currentClassName = element.getAttribute("class");
+  if (typeof currentClassName!== "undefined" && currentClassName) {
+    element.setAttribute("class",currentClassName + " "+ className);
+  }
+  else {
+    element.setAttribute("class",className); 
+  }
+}
+function removeClass(element,className) {
+  var currentClassName = element.getAttribute("class");
+  if (typeof currentClassName!== "undefined" && currentClassName) {
+
+    var class2RemoveIndex = currentClassName.indexOf(className);
+    if (class2RemoveIndex != -1) {
+        var class2Remove = currentClassName.substr(class2RemoveIndex, className.length);
+        var updatedClassName = currentClassName.replace(class2Remove,"").trim();
+        element.setAttribute("class",updatedClassName);
+    }
+  }
+  else {
+    element.removeAttribute("class");   
+  } 
+}
+function hasClass(element,className) {
+  var currentClassName = element.getAttribute("class");
+  if (className !== currentClassName) {
+    return false;
+  }
+  else {
+    return true;
+  }
+}
+/*
+function drawClock() {
+  drawFace(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  h = parseInt(document.getElementById("canvas").getAttribute("height"));
+  w=parseInt(document.getElementById("canvas").getAttribute("width"));
+  ctx.fillStyle = "#8e9da2";
+  ctx.fillRect(-150,-70,w,h);
+  var img=document.getElementById("reloj");
+  ctx.drawImage(img,-85,-85);
+  ctx.restore();
+}
+
+var cont = 0;
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    var mili = now.getMilliseconds();
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    var os = 1 / 60;
+    second=(((second/60)+(os * mili * 0.001))*Math.PI*2);
+    ctx.beginPath();
+    ctx.arc(0, 0, radius*0.07, 0, 2*Math.PI);
+    ctx.fillStyle = '#000000';
+    ctx.fill();
+}
+
+function drawHand(ctx, pos, length, width,type) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.moveTo(0,0);
+    if(type=="second"){
+      ctx.strokeStyle = "#c91e1f";
+    }else{
+      ctx.strokeStyle = "#0086af";
+    }
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+
+}
+
+function drawText(ctx, pos, length, width) {
+    ctx.rotate(pos);
+    var img=document.getElementById("thistext");
+    ctx.drawImage(img,4,-8);
+    ctx.rotate(-pos);
+    ctx.restore();
+}
+*/
+var cont = 0;
+function functionalidad(){
+
+    if (hasClass(document.getElementById("secuencia1"),'active')){
+        addClass(document.getElementById("secuencia2"),'active');
+        removeClass(document.getElementById("footer_logo"),'active');
+        addClass(document.getElementById("footer_legal"),'active');
+        setTimeout(function(){
+          removeClass(document.getElementById("secuencia1"),'active');
+        },1000)
+    }else if(hasClass(document.getElementById("secuencia2"),'active')){
+        removeClass(document.getElementById("secuencia2"),'active');
+        addClass(document.getElementById("secuencia3"),'active');
+        removeClass(document.getElementById("footer_legal"),'active');
+        addClass(document.getElementById("footer_logo"),'active');
+
+    }else if(hasClass(document.getElementById("secuencia3"),'active')){
+        removeClass(document.getElementById("secuencia3"),'active');
+        addClass(document.getElementById("secuencia1"),'active');
+    }
+}
+
+  var intervalTime = "";
+  function funcion_interval(){
+      intervalTime = setInterval(function(){
+          functionalidad();
+      },6000);
+  }
+
+
+  funcion_interval();
+
+  function clickthrough() {
+        window.open(window.clickTag)
+    }
+
+    
+</script>
+
+
+</body></html>

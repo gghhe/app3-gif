@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://cs.seedtag.com/cs.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="./fltiu.js(1).descarga" name="fq8z6d7lkiuc7"></script></head>
+<body><div id="flpx" style="display:none;" height="0" width="0"></div>
+<script>
+  window.addEventListener('message', function (event) {
+    if (event.data.indexOf('sas_csync_') != -1) {
+      var cookieSyncData = event.data.slice(10);
+
+      if (cookieSyncData) {
+        let cookiesyncUrl = this.getCSyncURL('smart', cookieSyncData);
+        insertImg(cookiesyncUrl);
+      }
+    }
+  }, true);
+
+  var channels = getChannels();
+
+  for (var i = 0; i < channels.length; i++) {
+    var channel = channels[i];
+    var seedtagCSUrl = encodeURIComponent(getCSyncURL(channel.name, channel.uid));
+    var finalUrl = window.location.protocol + channel.url + seedtagCSUrl;
+
+    switch (channel.format) {
+      case "script":
+        insertScript(finalUrl);
+        break;
+      case "img":
+        insertImg(finalUrl);
+        break;
+      case "iframe":
+        insertIframe(finalUrl);
+        break;
+    }
+  }
+
+  function insertScript(url) {
+    var channelScript = document.createElement('script');
+    channelScript.setAttribute('src', url);
+    channelScript.setAttribute('type', 'text/javascript');
+
+    document.body.appendChild(channelScript);
+  }
+
+  function insertImg(url) {
+    var channelImg = new Image(1, 1);
+    channelImg.src = url;
+
+    document.body.appendChild(channelImg);
+  }
+
+  function insertIframe(url) {
+    var channelIframe = document.createElement('iframe');
+    channelIframe.src = url;
+    channelIframe.scrolling = 'no';
+    channelIframe.frameBorder = 0;
+    channelIframe.width = 0;
+    channelIframe.height = 0;
+    channelIframe.style.margin = 0;
+    channelIframe.style.padding = 0;
+    channelIframe.style.display = 'none';
+    channelIframe.style.width = '0px';
+    channelIframe.style.height = '0px';
+
+    document.body.appendChild(channelIframe);
+  }
+
+  function getCSyncURL(channel, channeluid) {
+    return 'https://cs.api.seedtag.com/cookiesync/' + channel + '?channeluid=' + channeluid;
+  }
+
+  function getChannels() {
+    return [
+      {name: 'outbrain', url: '//b1sync.zemanta.com/usersync/seedtag/?cb=', uid: '__ZUID__', format: 'img'}
+    ];
+  }
+
+</script><img width="1" height="1" src="./saved_resource(1)">
+<script type="text/javascript" src="./ac"></script><iframe src="./Csync-vidcoin.html" id="sas_iframe" scrolling="no" frameborder="0" width="0" height="0" style="display: none; margin: 0px; padding: 0px; width: 0px; height: 0px;"></iframe>
+
+
+<img width="1" height="1" src="./smart"><script type="text/javascript" async="" src="./kfl.js.descarga"></script><script type="text/javascript" charset="ISO-8859-1" async="" src="./iftfl.js(1).descarga" name="iq8z6d7lkiuc7"></script><script type="text/javascript" charset="ISO-8859-1" async="" src="./flimpobj.js(1).descarga" name="f1524492282832"></script><div id="flpx_adb" class="pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links" style="width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -10000px !important;"></div></body></html>
